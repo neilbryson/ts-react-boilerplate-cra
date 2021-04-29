@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { createGlobalStyle } from 'styled-components';
+
+import { ThemeProvider } from './contexts/Theme';
+import { store } from './redux/configureStore';
+import { RootView } from './views/RootView';
+
+const BaseStyle = createGlobalStyle`
+  body {
+    background-color: ${(props) => props.theme.app.body.BG_COLOR};
+    color: ${(props) => props.theme.app.body.TEXT_COLOR};
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <ThemeProvider>
+        <BaseStyle />
+        <RootView />
+      </ThemeProvider>
+    </Provider>
   );
 }
 

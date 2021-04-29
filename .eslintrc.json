@@ -1,4 +1,23 @@
 {
   "root": true,
-  "extends": ["@neilbryson"]
+  "extends": [
+    "@neilbryson",
+    "plugin:compat/recommended"
+  ],
+  "plugins": [
+    "compat",
+    "simple-import-sort"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "simple-import-sort/exports": "warn",
+    "simple-import-sort/imports": "warn"
+  },
+  "settings": {
+    "polyfills": ["Promise", "fetch", "WebAssembly"]
+  }
 }
