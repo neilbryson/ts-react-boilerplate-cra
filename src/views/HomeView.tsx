@@ -6,9 +6,17 @@ import { CatFact } from '../components/CatFact';
 import { useTypedSelector } from '../hooks/useTypedSelector';
 import { getRandomFact } from '../redux/modules/facts/actions';
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border: 1px solid red;
+`;
 
-const RequestFactButton = styled.button``;
+const RequestFactButton = styled.button`
+  flex-grow: 0;
+`;
 
 export const CatFactsView = (): ReactElement<HTMLDivElement> => {
   const { factIds, facts, selectedFact } = useTypedSelector((state) => ({

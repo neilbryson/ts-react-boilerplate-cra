@@ -3,7 +3,7 @@ import { ThemeProvider as StyledComponentsThemeProvider } from 'styled-component
 
 import { themes } from '../styles/themes';
 
-const LOCAL_STORAGE_KEY = 'app-theme';
+export const LOCAL_STORAGE_KEY = 'app-theme';
 
 export enum Themes {
   dark = 'dark',
@@ -51,6 +51,8 @@ export const ThemeProvider = (props: ProviderProps): ReturnType<typeof ThemeCont
   }
 
   const ctx = { toggleTheme };
+
+  console.log(theme === Themes.dark ? themes.dark : themes.light);
 
   return (
     <ThemeContext.Provider value={ctx}>
