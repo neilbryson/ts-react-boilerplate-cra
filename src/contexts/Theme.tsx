@@ -52,8 +52,6 @@ export const ThemeProvider = (props: ProviderProps): ReturnType<typeof ThemeCont
 
   const ctx = { toggleTheme };
 
-  console.log(theme === Themes.dark ? themes.dark : themes.light);
-
   return (
     <ThemeContext.Provider value={ctx}>
       <StyledComponentsThemeProvider theme={theme === Themes.dark ? themes.dark : themes.light}>
