@@ -11,14 +11,14 @@ const Container = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100%;
-  border: 1px solid red;
+  padding: 30px 0;
 `;
 
 const RequestFactButton = styled.button`
   flex-grow: 0;
 `;
 
-export const CatFactsView = (): ReactElement<HTMLDivElement> => {
+export const HomeView = (): ReactElement<HTMLDivElement> => {
   const { factIds, facts, selectedFact } = useTypedSelector((state) => ({
     factIds: state.facts.factIds,
     facts: state.facts.facts,
