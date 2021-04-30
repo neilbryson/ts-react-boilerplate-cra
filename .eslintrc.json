@@ -14,6 +14,7 @@
   },
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-console": "error",
     "simple-import-sort/exports": "warn",
     "simple-import-sort/imports": "warn"
   },
