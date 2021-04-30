@@ -2,6 +2,8 @@
 
 Starter template based on [Create React App](https://github.com/facebook/create-react-app).
 
+A simple working application is provided. Thanks to [Cat Facts](https://cat-fact.herokuapp.com/) for the API.
+
 **This includes** :
 - [React](https://github.com/facebook/react)
 - [Redux](https://github.com/reduxjs/redux)
