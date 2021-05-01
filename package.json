@@ -1,11 +1,10 @@
 {
-  "name": "ts-react-boilerplate-cra",
-  "version": "0.1.0",
+  "name": "ts-react-starter",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "axios": "^0.21.1",
-    "dayjs": "^1.10.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",

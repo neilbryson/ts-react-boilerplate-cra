@@ -1,8 +1,8 @@
-# ts-react-boilerplate-cra
+# ts-react-starter
 
 Starter template based on [Create React App](https://github.com/facebook/create-react-app).
 
-A simple working application is provided. Thanks to [Cat Facts](https://cat-fact.herokuapp.com/) for the API.
+A sample usage of this template can be found [here](https://github.com/neilbryson/random-cat-facts).
 
 **This includes** :
 - [React](https://github.com/facebook/react)
