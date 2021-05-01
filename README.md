@@ -22,7 +22,7 @@ Follow this [instruction](https://docs.github.com/en/github/creating-cloning-and
 from GitHub to be able to create new repositories based on this template.
 
 ### Option 2 : Download a release
-Go to the [releases](https://github.com/neilbryson/ts-react-boilerplate-cra/releases) page.
+Go to the [releases](https://github.com/neilbryson/ts-react-starter/releases) page.
 
 ## Starting the application
 
